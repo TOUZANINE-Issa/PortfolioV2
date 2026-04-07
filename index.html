@@ -30,10 +30,6 @@
             background-color: #2c3e50;
             padding: 1rem 0;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
         }
 
         .navbar .nav-brand {
@@ -65,7 +61,6 @@
             background: linear-gradient(135deg, #3498db, #8e44ad);
             color: white;
             padding: 4rem 0;
-            padding-top: 7rem;
             text-align: center;
         }
 
@@ -298,22 +293,20 @@
 <section id="parcours" class="section section-alt">
     <div class="container">
         <h2 class="section-title">Parcours</h2>
-
-        <h3 style="font-size:1.5rem; color:#2c3e50; margin-bottom:1.5rem; text-align:center; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; max-width:400px; margin-left:auto; margin-right:auto;">🎓 Formation scolaire</h3>
-        <div class="timeline" style="margin-bottom:3rem;">
+        <div class="timeline">
             <div class="timeline-item fade-on-scroll">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <h3>BTS SIO (option SLAM)</h3>
-                    <span class="timeline-date">2024 – 2026</span>
-                    <p>Lycée Robert Schuman, Dugny</p>
+                    <span class="timeline-date">2024</span>
+                    <p>Lycée Robert Schuman, Paris</p>
                 </div>
             </div>
             <div class="timeline-item fade-on-scroll">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <h3>BUT GEII (technologie embarquée)</h3>
-                    <span class="timeline-date">2023 – 2024</span>
+                    <span class="timeline-date">2023</span>
                     <p>IUT Cergy-Pontoise, Sarcelles</p>
                 </div>
             </div>
@@ -325,10 +318,6 @@
                     <p>Lycée Paul Éluard, Saint-Denis</p>
                 </div>
             </div>
-        </div>
-
-        <h3 style="font-size:1.5rem; color:#2c3e50; margin-bottom:1.5rem; text-align:center; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; max-width:400px; margin-left:auto; margin-right:auto;">💼 Expérience professionnelle</h3>
-        <div class="timeline">
             <div class="timeline-item fade-on-scroll">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -391,12 +380,6 @@
             <div class="container">
                 <h2 class="section-title">Veille Technologique</h2>
                 <p>Sujet : <strong>Cloud computing et microservices (Docker, Kubernetes, sécurité des conteneurs)</strong></p>
-
-                <div style="max-width:800px; margin: 0 auto 2.5rem auto; background:#fff; padding:1.5rem 2rem; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); line-height:1.8; color:#444;">
-                    <h3 style="color:#3498db; margin-bottom:0.75rem;">Pourquoi ce sujet ?</h3>
-                    <p>Durant mon stage en tant que technicien informatique, j'ai découvert l'utilisation de conteneurs Docker dans l'environnement professionnel. Cette technologie m'a immédiatement intrigué : la façon dont elle permet d'isoler et de déployer des applications de manière rapide et reproductible m'a semblé fascinante. J'ai compris que le cloud computing et les microservices représentent une évolution majeure dans le développement logiciel moderne.</p>
-                    <p style="margin-top:0.75rem;">C'est cette expérience concrète en entreprise qui m'a donné envie d'approfondir le sujet. <strong>L'objectif de cette veille</strong> est de suivre l'évolution de ces technologies — de leurs origines jusqu'aux enjeux actuels de sécurité — afin de mieux comprendre comment elles transforment le déploiement applicatif et de me préparer à les utiliser dans ma future carrière de développeur.</p>
-                </div>
 
                 <div class="veille-grid">
                     <!-- Articles anciens -->
@@ -544,48 +527,37 @@
 <!-- Langues et Intérêts Section -->
 <section id="langues" class="section">
     <div class="container">
-        <h2 class="section-title">Langues</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; max-width:700px; margin:0 auto 4rem auto;">
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.05); min-width:200px; flex:1;">
-                <span style="font-weight:600; color:#333;">Arabe</span>
-                <span style="color:#3498db; font-weight:500;">Bilingue</span>
+        <div class="two-columns">
+            <div class="fade-on-scroll">
+                <h2 class="section-title">Langues</h2>
+                <div class="languages">
+                    <div class="language-item">
+                        <span class="language-name">Arabe</span>
+                        <span class="language-level">Bilingue</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Anglais</span>
+                        <span class="language-level">Niveau scolaire</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Espagnol</span>
+                        <span class="language-level">Niveau scolaire</span>
+                    </div>
+                </div>
             </div>
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.05); min-width:200px; flex:1;">
-                <span style="font-weight:600; color:#333;">Anglais</span>
-                <span style="color:#3498db; font-weight:500;">Niveau scolaire</span>
-            </div>
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.05); min-width:200px; flex:1;">
-                <span style="font-weight:600; color:#333;">Espagnol</span>
-                <span style="color:#3498db; font-weight:500;">Niveau scolaire</span>
-            </div>
-        </div>
-
-        <h2 class="section-title">Centres d'intérêt</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; max-width:900px; margin:0 auto;" class="fade-on-scroll">
-            <div style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.08); padding:1.25rem 1.75rem; text-align:center; min-width:160px; flex:1; max-width:250px;">
-                <div style="font-size:2rem; margin-bottom:0.5rem;">🥊</div>
-                <strong>Boxe anglaise</strong>
-            </div>
-            <div style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.08); padding:1.25rem 1.75rem; text-align:center; min-width:160px; flex:1; max-width:250px;">
-                <div style="font-size:2rem; margin-bottom:0.5rem;">🏀</div>
-                <strong>Basket-ball</strong>
-            </div>
-            <div style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.08); padding:1.25rem 1.75rem; text-align:center; min-width:160px; flex:1; max-width:250px;">
-                <div style="font-size:2rem; margin-bottom:0.5rem;">🥋</div>
-                <strong>Taekwondo</strong>
-            </div>
-            <div style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.08); padding:1.25rem 1.75rem; text-align:center; min-width:160px; flex:1; max-width:250px;">
-                <div style="font-size:2rem; margin-bottom:0.5rem;">🏊</div>
-                <strong>Natation</strong>
-            </div>
-            <div style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.08); padding:1.25rem 1.75rem; text-align:center; min-width:160px; flex:1; max-width:250px;">
-                <div style="font-size:2rem; margin-bottom:0.5rem;">🚗</div>
-                <strong>Automobile</strong>
-            </div>
-            <div style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.08); padding:1.25rem 1.75rem; text-align:center; min-width:160px; flex:1; max-width:250px;">
-                <div style="font-size:2rem; margin-bottom:0.5rem;">✈️</div>
-                <strong>Voyages</strong>
-                <p style="font-size:0.85rem; color:#888; margin-top:0.25rem;">Italie, Espagne, Maroc, Belgique</p>
+            <div class="fade-on-scroll">
+                <h2 class="section-title">Centres d'intérêt</h2>
+                <div class="interests">
+                    <div class="interest-item">
+                        <strong>Sports :</strong> Boxe anglaise, Basket-ball, Taekwondo, Natation, Vélo
+                    </div>
+                    <div class="interest-item">
+                        <strong>Passion :</strong> Automobile
+                    </div>
+                    <div class="interest-item">
+                        <strong>Voyages :</strong> Italie, Espagne, Maroc, Belgique
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -605,23 +577,43 @@
 <section id="contact" class="section">
     <div class="container">
         <h2 class="section-title">Contact</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; max-width:800px; margin:0 auto;" class="fade-on-scroll">
-            <div class="contact-item" style="flex:1; min-width:200px; max-width:280px;">
-                <span class="contact-icon">📞</span>
-                <span>06 44 07 31 90</span>
+        <div class="contact-content">
+            <div class="contact-info fade-on-scroll">
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span>06 44 07 31 90</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span>issatouzanine@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>Basé à Paris</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🔗</span>
+                    <span><a href="https://github.com/IssaTouzanine" target="_blank">Mon GitHub</a></span>
+                </div>
             </div>
-            <div class="contact-item" style="flex:1; min-width:200px; max-width:280px;">
-                <span class="contact-icon">✉️</span>
-                <span>issatouzanine@gmail.com</span>
-            </div>
-            <div class="contact-item" style="flex:1; min-width:200px; max-width:280px;">
-                <span class="contact-icon">📍</span>
-                <span>Basé à Paris</span>
-            </div>
-            <div class="contact-item" style="flex:1; min-width:200px; max-width:280px;">
-                <span class="contact-icon">🔗</span>
-                <span><a href="https://github.com/IssaTouzanine" target="_blank">Mon GitHub</a></span>
-            </div>
+
+            <form class="contact-form fade-on-scroll">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
@@ -629,6 +621,11 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
+        <div class="footer-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Plan du site</a>
+        </div>
         <p>&copy; 2025 Issa Touzanine - Tous droits réservés</p>
     </div>
 </footer>
